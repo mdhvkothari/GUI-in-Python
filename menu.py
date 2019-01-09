@@ -28,8 +28,14 @@ btn1 = Button(text='Submit',fg='green',bg='pink',command=fun1).place(x=70,y=100)
 # for adding menu label
 
 menulist = Menu()
+menulistitem = Menu()
 
-menulist.add_cascade(label='File')
+menulistitem.add_command(label='Save')
+menulistitem.add_command(label='Save as')
+menulistitem.add_command(label='New File')
+menulistitem.add_command(label='File window')
+
+menulist.add_cascade(label='File',menu=menulistitem)
 menulist.add_cascade(label='Edit')
 menulist.add_cascade(label='View')
 menulist.add_cascade(label='Save')
