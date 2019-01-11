@@ -7,6 +7,15 @@ def fun1():
 	txt1 = txt.get()
 	Label(text=txt1,font=10).pack();
 
+def function():
+	go = Tk()
+	go.title('New window')
+	go.mainloop()
+
+def save():
+	Label(text="Successfully Saved",font=10).pack();
+
+
 # for string input
 txt = StringVar()
 
@@ -30,9 +39,9 @@ btn1 = Button(text='Submit',fg='green',bg='pink',command=fun1).place(x=70,y=100)
 menulist = Menu()
 menulistitem = Menu()
 
-menulistitem.add_command(label='Save')
+menulistitem.add_command(label='Save',command=save)
 menulistitem.add_command(label='Save as')
-menulistitem.add_command(label='New File')
+menulistitem.add_command(label='New File',command=function)
 menulistitem.add_command(label='File window')
 
 menulist.add_cascade(label='File',menu=menulistitem)
