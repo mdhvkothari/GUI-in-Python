@@ -9,11 +9,13 @@ def fun1():
 
 def function():
 	go = Tk()
-	go.title('New window')
+	go.title('new window')
 	go.mainloop()
 
 def save():
 	Label(text="Successfully Saved",font=10).pack();
+
+
 
 
 # for string input
